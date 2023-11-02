@@ -1,0 +1,131 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <title>Bruce Lee title</title>
+    <style>
+      body{
+        padding: 10px;
+        background-color: lightgray;
+      }
+      h1{
+        font-style: italic;
+      }
+      
+    </style>
+    </head>
+
+    <body>
+      <header>
+        <h1 style="color:cadetblue">Bruce Lee Bio</h1>
+        <nav>
+          <a href="#overview">Overview</a>
+          <a href="#career">Career</a>
+          <a href="#awards">Awards</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+      <main>
+      <section id="overview">
+        
+        <aside>
+          <figure>
+            <img src="https://maytthome.files.wordpress.com/2020/06/what-we-learned-from-inside-30-for-30-be-water.jpeg?w=656&h=300&crop=1" alt="Where did Bruce Go?">
+          </figure>
+        </aside>
+        <h2>Overview</h2>
+        <p>Born Lee Jun-fan November 27, 1940 San Francisco, California, U.S. Died July 20, 1973 aged 32 Kowloon, 
+          British Hong Kong Resting place Lake View Cemetery, Seattle, Washington, U.S. Other names Lee Siu-lungLee 
+          Yuen-chamLee Yuen-kam Citizenship Hong Kong United States (from 1959) Alma mater University of Washington 
+          Occupations Martial artistactorphilosopherfilm directorscreenwriterfilm producer Years active 1941-1973 Works 
+          Filmography Height 1.72 m/5 ft 7 Spouse Linda Emery 1964 Children Brandon, Shannon 
+          Parents	 Lee Hoi-chuen, Grace Ho Relatives Peter Lee brother Robert Lee brother</p>
+      </section>
+
+      <section id="career">
+        <h2>Career</h2>
+        <p>Lee's father Lee Hoi-chuen was a famous Cantonese opera star. 
+          As a result, the junior Lee was introduced to the world of cinema at a very young age and appeared in several films as a child. 
+          Lee had his first role as a baby who was carried onto the stage in the film Golden Gate Girl. 
+          He took his Chinese stage name as lit. Lee the Little Dragon, 
+          for the fact that he was born in both the hour and the year of the Dragon by the Chinese zodiac.
+          As a nine-year-old, he co-starred with his father in The Kid in 1950, 
+          which was based on a comic book character and was his first leading role. 
+          By the time he was 18, he had appeared in 20 films. 
+          After attending Tak Sun School  several blocks from his home at 218 Nathan Road, Kowloon, 
+          Lee entered the primary school division of the Catholic La Salle College at age 12.</p>
+          <ol>
+          <li>1971 The Big Boss also know as Fists of Fury</li>
+          <li>1971-1972 Fist of Fury also know as The Chinese Connection</li>
+          <li>1972  Way of the Dragon also know as Return of the Dragon</li>
+          <li>1973  Enter the Dragon</li>
+          </ol>
+      </section>
+
+      <section id="awards">
+        <h2>Awards</h2>
+        <ul>
+        <li>1972: Golden Horse Awards Best Mandarin Film</li>
+        <li>1972: Fist of Fury Special Jury Award</li>
+        <li>1994: Hong Kong Film Award for Lifetime Achievement</li>
+        <li>1999: Named by Time as one of the 100 most influential people of the 20th century</li>
+        <li>2004: Star of the Century Award</li>
+        <li>2013: The Asian Awards Founders Award</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Bruce Lee Enterprises, LLC BLE is the exclusive owner of all commercial merchandising and allied rights relating to the use of
+         Bruce Lee's name, image, likeness, persona, signature, voice, attributes, marks, logos, symbols, works, photographs and writings.  
+         BLE is registered as the successor-in-interest with the office of the Secretary of State of California 
+         in accordance with the requirements of California Civil Code Section 3344.1 and is the owner of certain proprietary rights 
+         in and to Bruce Lee including, but not limited to, the rights of association, publicity, sponsorship, and or endorsement, 
+         and exclusively owns and controls many registered trademarks in and to the name, image, phrases and symbols of Bruce Lee.</p>
+         <a href="https://brucelee.com/contact-us-1">ContactLink</a>
+         <form action="">
+          <label>email
+            <input type="email" placeholder="type email">
+          </label>
+
+          <label>
+            <input type="text" placeholder="type a message to the webmaster">
+          </label>
+          
+         </form>
+      </section>
+      </main>
+      <footer></footer>
+    </body>
+    </html>
